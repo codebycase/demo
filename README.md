@@ -17,6 +17,8 @@ docker run -d -p 9411:9411 openzipkin/zipkin
 
 - Now you can run DemoApplication.java
 
+- As observed, the trace will be enabled when the log level is set to DEBUG
+
 
 ### Reference Documentation
 For further reference, please consider the following sections:
