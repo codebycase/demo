@@ -1,5 +1,23 @@
 # Getting Started
 
+
+## Sleuth RabbitMQ
+
+- Run local RabbitMQ docker
+
+```
+docker run --rm -it --hostname my-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+```
+
+- Run local Zipkin docker
+
+```
+docker run -d -p 9411:9411 openzipkin/zipkin
+```
+
+- Now you can run DemoApplication.java
+
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
