@@ -14,8 +14,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.lang.invoke.MethodHandles;
 
-import brave.sampler.Sampler;
-
 @Configuration
 public class SpringAmqpConfiguration {
   protected static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
@@ -23,11 +21,6 @@ public class SpringAmqpConfiguration {
   static final String topicExchangeName = "rmq-test-exchange";
   public final static String queueName1 = "rmq_test_queue_one";
   public final static String queueName2 = "rmq_test_queue_two";
-
-  @Bean
-  public Sampler defaultSampler() {
-      return Sampler.ALWAYS_SAMPLE;
-  }
   
   @Bean
   Queue queue1() {
