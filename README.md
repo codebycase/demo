@@ -47,6 +47,3 @@ The following guides illustrate how to use some features concretely:
 #### with otel (not instrumenting the header automatically)
 
 2022-07-26 11:17:05.826 DEBUG [,,] 19519 --- [           main] o.s.amqp.rabbit.core.RabbitTemplate      : Publishing message [(Body:'key-1;value-1' MessageProperties [headers={}, contentType=text/plain, contentEncoding=UTF-8, contentLength=13, deliveryMode=PERSISTENT, priority=0, deliveryTag=0])] on exchange [rmq-test-exchange], routingKey = [foo.one.baz]
-
-2022-07-26 11:17:05.829 DEBUG [,,] 19519 --- [    container-1] o.s.a.r.listener.BlockingQueueConsumer   : Received message: (Body:'key-1;value-1' MessageProperties [headers={}, contentType=text/plain, contentEncoding=UTF-8, contentLength=0, receivedDeliveryMode=PERSISTENT, priority=0, redelivered=false, receivedExchange=rmq-test-exchange, receivedRoutingKey=foo.one.baz, deliveryTag=2, consumerTag=amq.ctag-SaKuyTMGuohNVL4z_ZGHuQ, consumerQueue=rmq_test_queue_one])
-
